@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+
+    <entry key="err.msg.is_null">%s is null.</entry>
+    <entry key="err.msg.is_empty">%s is empty.</entry>
+    <entry key="err.msg.not_found">%s not found: %s</entry>
+    <entry key="err.msg.invalid_code_point">Invalid Code Point.</entry>
+    <entry key="err.msg.unmatched_surrogate">Unmatched Surrogate.</entry>
+    <entry key="err.msg.illegal_char_at_idx">Illegal Character at Index %d: %s</entry>
+    <entry key="err.msg.sep_str_null">Separator string is null.</entry>
+    <entry key="err.msg.def_str_null">Default string value is null.</entry>
+
+    <entry key="word.key">Key</entry>
+    <entry key="word.keypath">KeyPath</entry>
+    <entry key="word.matcher">Matcher</entry>
+    <entry key="word.input">Input</entry>
+
+    <entry key="test.1">Now is the %s for %2d good %1$-4S to come%nto the %%aid of their %4$!s! %9$tF That's %3$s %s! %s %&lt;s %s %s %s</entry>
+
+</properties>
