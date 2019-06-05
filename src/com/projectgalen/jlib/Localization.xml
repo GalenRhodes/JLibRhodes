@@ -10,11 +10,14 @@
     <entry key="err.msg.illegal_char_at_idx">Illegal Character at Index %d: %s</entry>
     <entry key="err.msg.sep_str_null">Separator string is null.</entry>
     <entry key="err.msg.def_str_null">Default string value is null.</entry>
+    <entry key="err.msg.cannot_rotate_node">Cannot rotate %s because the node does not have a %s child node.</entry>
 
     <entry key="word.key">Key</entry>
     <entry key="word.keypath">KeyPath</entry>
     <entry key="word.matcher">Matcher</entry>
     <entry key="word.input">Input</entry>
+    <entry key="word.right">right</entry>
+    <entry key="word.left">left</entry>
 
     <entry key="test.1">Now is the %s for %2d good %1$-4S to come%nto the %%aid of their %4$!s! %9$tF That's %3$s %s! %s %&lt;s %s %s %s</entry>
 

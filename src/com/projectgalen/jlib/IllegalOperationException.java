@@ -2,11 +2,11 @@ package com.projectgalen.jlib;
 
 /* =================================================================================================================================
  *     PROJECT: JLibRhodes
- *    FILENAME: C.java
+ *    FILENAME: IllegalOperationException.java
  *     PACKAGE: com.projectgalen.jlib
  *         IDE: AppCode
  *      AUTHOR: Galen Rhodes
- *        DATE: 05/25/2019
+ *        DATE: 05/28/2019
  * DESCRIPTION:
  *
  * Copyright © 2019 Project Galen. All rights reserved.
@@ -24,27 +24,26 @@ package com.projectgalen.jlib;
  * NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  * ============================================================================================================================== */
 
-public final class C {
+public class IllegalOperationException extends RuntimeException {
 
-    public static final String SEP = "⌘";
+    public IllegalOperationException() {
+        super();
+    }
 
-    public static final String ERR_MSG_SEP_STR_NULL        = "err.msg.sep_str_null";
-    public static final String ERR_MSG_DEF_STR_NULL        = "err.msg.def_str_null";
-    public static final String ERR_MSG_NOT_FOUND           = "err.msg.not_found";
-    public static final String ERR_MSG_IS_NULL             = "err.msg.is_null";
-    public static final String ERR_MSG_IS_EMPTY            = "err.msg.is_empty";
-    public static final String ERR_MSG_ILLEGAL_CHAR_AT_IDX = "err.msg.illegal_char_at_idx";
-    public static final String ERR_MSG_INVALID_CODE_POINT  = "err.msg.invalid_code_point";
-    public static final String ERR_MSG_UNMATCHED_SURROGATE = "err.msg.unmatched_surrogate";
-    public static final String ERR_MSG_CANNOT_ROTATE_NODE  = "err.msg.cannot_rotate_node";
+    public IllegalOperationException(String format, Object... args) {
+        super(Q.format(format, args));
+    }
 
-    public static final String WORD_KEY     = "word.key";
-    public static final String WORD_KEYPATH = "word.keypath";
-    public static final String WORD_MATCHER = "word.matcher";
-    public static final String WORD_INPUT   = "word.input";
-    public static final String WORD_RIGHT   = "word.right";
-    public static final String WORD_LEFT    = "word.left";
+    public IllegalOperationException(Throwable cause, String format, Object... args) {
+        super(Q.format(format, args), cause);
+    }
 
-    private C() {}
+    public IllegalOperationException(Throwable cause) {
+        super(cause);
+    }
+
+    protected IllegalOperationException(Throwable cause, boolean enableSuppression, boolean writableStackTrace, String format, Object... args) {
+        super(Q.format(format, args), cause, enableSuppression, writableStackTrace);
+    }
 
 }
